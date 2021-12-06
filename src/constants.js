@@ -19,7 +19,7 @@ const initialState ={
     countries:[],
     filter:"Filter by Region",
     search:"",
-    filteredCountries:[]
+    filteredCountries:null
 }
 const styles = {
     fontSizeHomePage: '14px'

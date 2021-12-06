@@ -56,7 +56,7 @@ const CountryInformation = (props) => {
                                 </TextContainer>
                                 <TextContainer>
                                     <Description>
-                                        <Label>Capital:</Label> { country.capital}
+                                        <Label>Capital:</Label> { country.capital ? country.capital:"Not capital"}
                                     </Description>
                                 </TextContainer>
                             </PrimaryDescription>
@@ -70,7 +70,7 @@ const CountryInformation = (props) => {
                                 </TextContainer>
                                 <TextContainer>
                                     <Description>
-                                        <Label>Currencies:</Label> { country.currencies[0].name}
+                                        <Label>Currencies:</Label> {country.currencies ? country.currencies[0].name : 'Not currencies'}
                                     </Description>
                                 </TextContainer>
                                 <TextContainer>
@@ -87,7 +87,7 @@ const CountryInformation = (props) => {
                                 {country.borders ? country.borders.map((border,index)=>(
                                     <Item key={index}>{border}</Item>    
         
-                                )) :  "Not founded in the api"}
+                                )) :  <Description>Not founded in the api</Description>}
                             </ItemsContainer>
                         </BorderCountries>         
                     </CountryInfo>

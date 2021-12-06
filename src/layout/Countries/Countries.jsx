@@ -15,7 +15,7 @@ const Countries = (props) => {
     
     return (
         <CountriesContainer>
-            {props.filteredCountries.length > 0 ? 
+            {props.filteredCountries ? 
                 props.filteredCountries.map((country,index) => (
                     <CountryItem country={country} key={index}/>
                 ))
