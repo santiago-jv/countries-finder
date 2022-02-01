@@ -1,1 +1,1 @@
-# Frotend Mentor with React s and Redux
+# Frotend Mentor with React js and Redux
